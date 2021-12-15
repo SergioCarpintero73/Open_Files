@@ -43,7 +43,6 @@ def write_result(merged_files):
 def main():
     file = get_files()
     safeguard(file)
-    # sorting_files(file)
     merge = get_sorted_dict(file)
     write_result(merge)
 
