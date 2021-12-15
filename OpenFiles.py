@@ -40,26 +40,6 @@ def write_result(merged_files):
             file.write('\n')
 
 
-# def sorting_files(list_files):
-#     list_names = []
-#     for item in list_files:
-#         i = 0
-#         with open(item, 'r', encoding="utf-8") as file:
-#             for line in file:
-#                 i += 1
-#         list_names.append([item, i])
-#
-#     list_names.sort(key=lambda z: z[1])
-#
-#     with open('result.txt', 'w', encoding="utf-8") as file_write:
-#         for item in list_names:
-#             with open(item[0], 'r', encoding="utf-8") as file_read:
-#                 file_write.write(f'{item[0]}\n')
-#                 file_write.write(f'{item[1]}\n')
-#                 for i in file_read:
-#                     file_write.write(i)
-#                 file_write.write('\n')
-
 def main():
     file = get_files()
     safeguard(file)
